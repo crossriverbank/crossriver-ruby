@@ -1,0 +1,8 @@
+{
+  "name": "DUMMY_V1",
+  "type": "DUMMY_V1",
+  "config": {
+    "key1": "value-1",
+    "key2": "value-2"
+  }
+}

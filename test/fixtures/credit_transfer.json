@@ -1,0 +1,10 @@
+{
+  "merchant_identity": "@identity",
+  "currency": "USD",
+  "destination": "@destination",
+  "amount": 888888,
+  "tags":{
+    "name": "sample_tag"
+  },
+  "processor": "DUMMY_V1"
+}

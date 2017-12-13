@@ -1,0 +1,32 @@
+machine:
+  ruby:
+    version: 1.9.3
+
+  environment:
+    RUBY_VERSIONS: 1.9.3,2.0.0,2.1.10,2.2.5,2.2.6,2.3.1
+    PROCESSING_URL: https://api.sandbox.crb.finixpayments.com
+
+dependencies:
+  override:
+    - rvm get head
+    - rvm install $RUBY_VERSIONS
+    - rvm $RUBY_VERSIONS --verbose do gem install bundler
+    - rvm $RUBY_VERSIONS --verbose do bundle install
+
+test:
+  override:
+    - rvm $RUBY_VERSIONS --verbose do bundle exec rake test
+
+  post:
+    - cp -Rf .report/ $CIRCLE_ARTIFACTS
+
+deployment:
+  release:
+    tag: /v[0-9]+(\.[0-9]+)*/
+    owner: CrossRiverBank
+    commands:
+      - |
+        curl -u ${rubygems_user}:${rubygems_password} https://rubygems.org/api/v1/api_key.yaml > ~/.gem/credentials
+      - chmod 0600 ~/.gem/credentials
+      - gem build *.gemspec
+      - gem push *.gem

@@ -1,0 +1,48 @@
+{
+  "entity": {
+    "first_name": "xdwayne",
+    "last_name": "Sunkhronos",
+    "email": "xuser@example.org",
+    "business_name": "business inc 2",
+    "business_type": "LIMITED_LIABILITY_COMPANY",
+    "url": "http://sample.company.com",
+    "doing_business_as": "xdoingBusinessAs",
+    "phone": "x1234567890",
+    "business_phone": "+1 (408) 756-4497",
+    "tax_id": "x123456789",
+    "business_tax_id": "x123456789",
+    "default_statement_descriptor": "sample",
+    "incorporation_date": {
+      "day": "15",
+      "month": "10",
+      "year": "2015"
+    },
+    "principal_percentage_ownership": 10,
+    "personal_address": {
+      "line1": "741 Douglass St",
+      "line2": "Apartment 7",
+      "city": "San Mateo",
+      "region": "CA",
+      "postal_code": "94114",
+      "country": "USA"
+    },
+    "business_address": {
+      "line1": "741 Douglass St",
+      "line2": "Apartment 7",
+      "city": "San Mateo",
+      "region": "CA",
+      "postal_code": "94114",
+      "country": "USA"
+    },
+    "mcc": 7399,
+    "dob": {
+      "day": 27,
+      "month": 5,
+      "year": 1978
+    },
+    "max_transaction_amount": 888888,
+    "settlement_currency": "USD",
+    "settlement_bank_account": "CORPORATE",
+    "annual_card_volume": 100
+  }
+}

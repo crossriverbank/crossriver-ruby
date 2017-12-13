@@ -1,0 +1,7 @@
+{
+  "amount": 100,
+  "processor":"DUMMY_V1",
+  "source" : "@source",
+  "currency": "USD",
+  "merchant_identity": "@identity"
+}
