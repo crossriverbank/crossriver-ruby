@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.required_ruby_version = '>= 1.9'
   spec.version       = CrossRiverBank::VERSION
   spec.authors       = ['Cross River Bank']
-  spec.email         = ['support@pcrossriverbank.com']
+  spec.email         = ['sdksupport@crossriverbank.com']
 
   spec.summary       = %q{CrossRiverBank Ruby Client}
   spec.description   = %q{CrossRiverBank Ruby Client}
